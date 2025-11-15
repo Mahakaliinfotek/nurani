@@ -1,42 +1,68 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Jost:wght@300;400;500;600;700&family=Karla:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes fadeOutScale {
+  0% {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
   }
-  to {
-    transform: rotate(360deg);
+
+  30% {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(1) translate(-50%, -50%);
+  }
+
+  80% {
+    opacity: 0.2;
+    transform: scale(1) translate(-50%, -50%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1) translate(-50%, -50%);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* swiper-pagination overrides */
+.swiper-pagination {
+  position: relative !important;
+  /* keeps it below image */
+  margin-top: 20px;
+  /* spacing from image */
+  display: flex !important;
+  justify-content: center;
+  gap: 0px;
 }
 
-.card {
-  padding: 2em;
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 7px !important;
+  border-radius: 50px !important;
+  background: #ccc !important;
+  /* override blue */
+  opacity: 1 !important;
+  /* make inactive bullets visible */
+  transition: all 0.3s ease !important;
 }
 
-.read-the-docs {
-  color: #888;
+.swiper-pagination-bullet-active {
+  width: 20px !important;
+  /* longer pill */
+  height: 7px !important;
+  border-radius: 50px !important;
+  background: #333 !important;
+  /* dark active one */
 }
