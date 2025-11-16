@@ -16,14 +16,14 @@ import Banner8 from "../../assets/images/banner8.png";
 import Banner9 from "../../assets/images/banner9.png";
 
 const slides = [
-    { img: Banner1, name: "MAHAKALI ESTATE" },
-    { img: Banner2, name: "MAHAKALI UDYOG" },
-    { img: Banner3, name: "OSHIYAMAA TRANSPORT OPERATOR" },
-    { img: Banner4, name: "MAHAKALI INTERNATIONAL" },
-    { img: Banner5, name: "INDIAZONA" },
-    { img: Banner6, name: "RANSAN ENTERPRISES" },
-    { img: Banner7, name: "KRISHNA RESOURCES" },
-    { img: Banner8, name: "MAHAKALI INFOTEK" },
+    // { img: Banner1, name: "MAHAKALI ESTATE" },
+    // { img: Banner2, name: "MAHAKALI UDYOG" },
+    // { img: Banner3, name: "OSHIYAMAA TRANSPORT OPERATOR" },
+    // { img: Banner4, name: "MAHAKALI INTERNATIONAL" },
+    // { img: Banner5, name: "INDIAZONA" },
+    // { img: Banner6, name: "RANSAN ENTERPRISES" },
+    // { img: Banner7, name: "KRISHNA RESOURCES" },
+    // { img: Banner8, name: "MAHAKALI INFOTEK" },
     { img: Banner9, name: "MAHAKALI NURANI LLC, OMAN" },
 ];
 
