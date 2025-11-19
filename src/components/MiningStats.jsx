@@ -14,7 +14,7 @@ const MiningStats = () => {
             sx={{
                 px: 2,
 
-                fontFamily: '"Manrope", sans-serif',
+                fontFamily: "Manrope !important",
             }}
         >
             <Container

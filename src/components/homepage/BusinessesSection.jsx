@@ -25,7 +25,8 @@ import logo8 from "../../assets/images/business/kp.png";
 import logo9 from "../../assets/images/business/mun.png";
 
 
-export default function BusinessesSection() {
+export default function BusinessesSection() 
+{
     const businesses = [
         {
             logo: logo1,
@@ -75,7 +76,7 @@ export default function BusinessesSection() {
     ];
 
     return (
-        <Box sx={{ width: "100%", py: 6, px: { xs: 2, md: 4 } }}>
+        <Box id="businesses-section" sx={{ width: "100%", py: 6, px: { xs: 2, md: 4 } }} >
             {/* Header */}
             <Typography
                 sx={{

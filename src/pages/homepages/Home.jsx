@@ -4,7 +4,7 @@ import HeroSection from "../../components/HeroSection";
 import TextGrid from "../../components/TextGrid";
 import BusinessFocus from "../../components/BusinessFocus";
 import MiningStats from "../../components/MiningStats";
-import Footer from "../../components/Footer";
+
 import ProductsSection from "../../components/ProductsSection";
 import Logistics from "../../components/Logistics";
 import WhatMakesUsDifferent from "../../components/WhatMakesUsDifferent";
@@ -18,6 +18,7 @@ import BusinessesSection from "../../components/homepage/BusinessesSection";
 import HistorySection from "../../components/homepage/HistorySection";
 import SustainabilitySection from "../../components/homepage/SustainabilitySection";
 import MediaCSRSection from "../../components/homepage/MediaCSRSection";
+import Footer from "../../layouts/Footer";
 
 
 const HomePage = () => {
@@ -26,27 +27,21 @@ const HomePage = () => {
 
             <Header />
             <HeroSlider />
-            {/* <HeroSection /> */}
-            {/* <Box sx={{
-                px: { md: 10, lg: 10 }
+            <CompanyStrip />
+            <Box sx={{
+                px: { md: 5, lg: 5 }
 
             }}
-            > */}
-            <TextGrid />
-            <BusinessFocus />
-            <MiningStats />
-            <ProductsSection />
-            <Logistics />
-            <WhatMakesUsDifferent />
-            <WhyChooseUs />
+            >
+                <TextGrid />
+                <BusinessFocus />
+                <MiningStats />
+                <ProductsSection />
+                <Logistics />
+                <WhatMakesUsDifferent />
+                <WhyChooseUs />
 
-            {/* </Box> */}
-
-
-            {/* <Footer /> */}
-
-
-            <CompanyStrip />
+            </Box>
             <PeopleCultureSlider />
             <VisionSection />
             <BusinessesSection />
@@ -54,6 +49,7 @@ const HomePage = () => {
             <SustainabilitySection />
             <MediaCSRSection />
             <CompanyStrip />
+            <Footer />
 
 
         </>

@@ -28,7 +28,7 @@ const ProductsSection = () => {
 
                 px: 2,
                 py: { xs: 4, md: 2 },
-                fontFamily: '"Manrope", sans-serif',
+                fontFamily: "Manrope !important",
                 color: "#0c1d14",
                 mt:{md:4}
                 // backgroundColor: "#F0F7F0",
@@ -40,10 +40,10 @@ const ProductsSection = () => {
             <Typography
                 variant="h5"
                 sx={{
-                    fontFamily: '"Manrope", sans-serif',
+                    fontFamily: "Manrope !important",
                     fontWeight: 700,
                     fontSize: { xs: "22px", md: "32px", lg: "32px" },
-                    mb: 3,
+               
                     color: "#0c1d14",
                 }}
             >
@@ -58,7 +58,7 @@ const ProductsSection = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     gap: { xs: 2, md: 10 },
-                    mb: 5,
+                 
                     flexWrap: "nowrap",
                     overflowX: "auto",
                     scrollbarWidth: "none",
@@ -96,7 +96,7 @@ const ProductsSection = () => {
                                 lineHeight: 1.6,
                                 color: "#0c1d14",
                                 fontWeight: 500,
-                                fontFamily: '"Manrope", sans-serif',
+                                fontFamily: "Manrope !important",
                             }}
                         >
                             {item.label}
@@ -110,7 +110,7 @@ const ProductsSection = () => {
             <Typography
                 variant="h5"
                 sx={{
-                    fontFamily: '"Manrope", sans-serif',
+                    fontFamily: "Manrope !important",
                     fontWeight: 700,
                     fontSize: { xs: "22px", md: "32px", lg: "32px" },
                     mb: 2,
@@ -126,6 +126,7 @@ const ProductsSection = () => {
                     alignItems: "center",
                     flexWrap: "wrap",
                     gap: 1.5,
+                   
                 }}
             >
 
@@ -134,7 +135,7 @@ const ProductsSection = () => {
 
                         variant="body1"
                         sx={{
-                            fontFamily: '"Manrope", sans-serif',
+                            fontFamily: "Manrope !important",
                             fontSize: "1.5rem",
                             lineHeight: 1.7,
                             color: "#0c1d14",

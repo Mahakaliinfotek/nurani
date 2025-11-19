@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
             <Box sx={{ mx: "auto", mb: 5 }}>
                 <Typography
                     sx={{
-                        fontFamily: '"Manrope", sans-serif',
+                        fontFamily: "Manrope !important",
                         fontSize: { xs: "22px", md: "32px", lg: "32px" },
                         fontWeight: 800,
                         mb: 2,
@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
                     sx={{
                         fontSize: { xs: "1rem", md: "1.15rem" },
                         color: "#555",
-                        fontFamily: '"Manrope", sans-serif',
+                        fontFamily: "Manrope !important",
                         lineHeight: 1.6,
                     }}
                 >
@@ -70,7 +70,8 @@ const WhyChooseUs = () => {
                     mx: "auto",
                     display: "flex",
                     flexWrap: "wrap",
-                    gap: 1.5,
+                    gap: 1.0,
+
                 }}
             >
                 {features.map((item, i) => (
@@ -82,7 +83,6 @@ const WhyChooseUs = () => {
 
                             width: {
                                 xs: "calc(50% - 12px)",
-
                                 md: "31.33%",
                             },
 
@@ -99,7 +99,7 @@ const WhyChooseUs = () => {
                             }}
                         >
                             {/* Icon */}
-                            <Box sx={{ mb: 2, "& svg": { fontSize: 40, color: "#1B8C3A" } }}>
+                            <Box sx={{ mb: 0, "& svg": { fontSize: 40, color: "#1B8C3A" } }}>
                                 {item.icon}
                             </Box>
 
@@ -118,7 +118,7 @@ const WhyChooseUs = () => {
                             {/* Description */}
                             <Typography
                                 sx={{
-                                    fontFamily: '"Manrope", sans-serif',
+                                    fontFamily: "Manrope !important",
                                     color: "#555",
                                     fontSize: { xs: "1rem", md: "1rem" },
                                     lineHeight: 1.6,

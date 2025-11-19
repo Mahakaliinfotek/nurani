@@ -8,14 +8,14 @@ const Logistics = () => {
         <Box
             sx={{
                 width: "100%",
-                py: { xs: 1, md: 2 },
-                px: { xs: 0, md: 4 },
-                fontFamily: '"Manrope", sans-serif',
+                py: { xs: 1, md: 0 },
+                px: { xs: 0, md: 2 },
+                fontFamily: "Manrope !important",
             }}
         >
             <Typography
                 sx={{
-                    fontFamily: '"Manrope", sans-serif',
+                    fontFamily: "Manrope !important",
                     fontSize: { xs: "22px", md: "32px", lg: "32px" },
                     fontWeight: 800,
                     mb: 3,
@@ -25,7 +25,7 @@ const Logistics = () => {
                 Logistics & Shipping
             </Typography>
 
-            <Grid container spacing={3} sx={{ px: { xs: 2, md: 0 } }}>
+            <Grid container spacing={3} sx={{   }}>
 
 
                 {[

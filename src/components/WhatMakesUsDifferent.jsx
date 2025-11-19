@@ -29,15 +29,15 @@ const WhatMakesUsDifferent = () => {
         <Box
             sx={{
                 width: "100%",
-                py: { xs: 2, md: 2 },
-                px: { xs: 2, md: 4 },
-                fontFamily: '"Manrope", sans-serif',
+                py: { xs: 2, md: 4 },
+                px: { xs: 2, md: 2 },
+                fontFamily: "Manrope !important",
             }}
         >
 
             <Typography
                 sx={{
-                    fontFamily: '"Manrope", sans-serif',
+                    fontFamily: "Manrope !important",
                     fontSize: { xs: "22px", md: "32px", lg: "32px" },
                     fontWeight: 800,
                     mb: 3,
@@ -46,14 +46,19 @@ const WhatMakesUsDifferent = () => {
                 What Makes Us Different
             </Typography>
 
-            {/* HORIZONTAL SCROLL ON BOTH MOBILE + DESKTOP */}
+
             <Box
                 sx={{
+
                     display: "flex",
-                    flexWrap: "wrap",        // enable wrapping
+                    flexWrap: "wrap",
                     gap: 2,
                     pb: 1,
-                    justifyContent: { xs: "center", md: "flex-start" },
+                    //justifyContent: { xs: "center", md: "flex-start" },
+                    display: "flex",
+                    flexWrap: "wrap",
+                    justifyContent: "center",
+                    gap: 4,
                 }}
             >
                 {data.map((item, i) => (
@@ -61,8 +66,9 @@ const WhatMakesUsDifferent = () => {
                         key={i}
                         elevation={0}
                         sx={{
-                            width: { xs: "100%", sm: "48%", md: "32%", lg: "32%" }, // responsive wrapping
+                            width: { xs: "100%", sm: "48%", md: "30%", lg: "30%" }, // responsive wrapping
                             borderRadius: "16px",
+                            //   maxWidth: "420px",
                             border: "1px solid #D7ECD8",
                             p: { xs: 3, md: 3.5 },
                             backgroundColor: "#fff",
@@ -71,7 +77,7 @@ const WhatMakesUsDifferent = () => {
                         {/* Title */}
                         <Typography
                             sx={{
-                                fontFamily: '"Manrope", sans-serif',
+                                fontFamily: "Manrope !important",
                                 fontSize: { xs: "1.1rem", md: "1.1rem" },
                                 fontWeight: 700,
                                 mb: 1,
@@ -83,7 +89,7 @@ const WhatMakesUsDifferent = () => {
                         {/* Description */}
                         <Typography
                             sx={{
-                                fontFamily: '"Manrope", sans-serif',
+                                fontFamily: "Manrope !important",
                                 color: "#555",
                                 fontSize: { xs: "1rem", md: "1.rem" },
                                 lineHeight: 1.4,

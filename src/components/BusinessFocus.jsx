@@ -9,7 +9,7 @@ const BusinessFocus = () => {
                 px: 2,
 
                 py: { xs: 2, md: 2 },
-                fontFamily: '"Manrope", sans-serif',
+                fontFamily: "Manrope !important",
                 textAlign: "left",
             }}
         >
@@ -26,7 +26,7 @@ const BusinessFocus = () => {
                         fontSize: { xs: "22px", md: "32px", lg: "32px" },
                         mb: 1.5,
                         color: "#0c1d14",
-                        fontFamily: '"Manrope", sans-serif',
+                        fontFamily: "Manrope !important",
                     }}
                 >
                     Business Focus
@@ -39,7 +39,7 @@ const BusinessFocus = () => {
                         lineHeight: 1.7,
                         color: "#0c1d14",
                         fontWeight: 400,
-                        fontFamily: '"Manrope", sans-serif',
+                        fontFamily: "Manrope !important",
                     }}
                 >
                     Mahakali Nurani LLC is the Group’s Oman platform for minerals, led by

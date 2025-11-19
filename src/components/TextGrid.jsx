@@ -22,7 +22,7 @@ export default function TextGrid() {
                 justifyContent: "center",
                 alignItems: "stretch",
                 width: "100%",
-                fontFamily: '"Manrope", sans-serif',
+                fontFamily: "Manrope !important",
                 columnGap: { xs: "12px", md: "16px" }, // horizontal gap
                 rowGap: { xs: "12px", md: "16px" },
                 py: { xs: 2, md: 4 }
@@ -78,7 +78,7 @@ export default function TextGrid() {
                             sx={{
                                 fontWeight: 700,
                                 color: "#0c1d14",
-                                fontFamily: '"Manrope", sans-serif',
+                                fontFamily: "Manrope !important",
                                 fontSize: { xs: "1rem", lg: "1.5rem" },
                             }}
                         >
