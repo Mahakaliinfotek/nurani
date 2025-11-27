@@ -19,6 +19,7 @@ import HistorySection from "../../components/homepage/HistorySection";
 import SustainabilitySection from "../../components/homepage/SustainabilitySection";
 import MediaCSRSection from "../../components/homepage/MediaCSRSection";
 import Footer from "../../layouts/Footer";
+import ContactUs from "../../components/homepage/ContactUs";
 
 
 const HomePage = () => {
@@ -49,6 +50,7 @@ const HomePage = () => {
             <SustainabilitySection />
             <MediaCSRSection />
             <CompanyStrip />
+            <ContactUs />
             <Footer />
 
 

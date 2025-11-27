@@ -41,6 +41,19 @@ export default function Header({ isDark = true }) {
             }
             return;
         }
+        if (path === "/contact-us") {
+            if (window.location.pathname === "/") {
+                // Already on homepage → scroll only
+                document.getElementById("contact-section")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            } else {
+                // Navigate to homepage → then scroll after load
+                navigate("/", { state: { scrollTo: "contact-section" } });
+            }
+            return;
+        }
 
         // Default navigation
         navigate(path);
@@ -111,8 +124,9 @@ export default function Header({ isDark = true }) {
                             {/* CTA Button */}
                             <Button
                                 variant="contained"
-                                component="a"
-                                href={`mailto:info@mahakaliudyog.com`}
+                                // component="a"
+                                // href={`mailto:info@mahakaliudyog.com`}
+                                onClick={() => handleNavigate("/contact-us")}
                                 sx={{
                                     background: ctaBg,
                                     textTransform: "none",
