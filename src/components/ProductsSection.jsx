@@ -30,7 +30,7 @@ const ProductsSection = () => {
                 py: { xs: 4, md: 2 },
                 fontFamily: "Manrope !important",
                 color: "#0c1d14",
-                mt:{md:4}
+                mt: { md: 4 }
                 // backgroundColor: "#F0F7F0",
                 // border: "1px solid #D7ECD8",
 
@@ -43,7 +43,7 @@ const ProductsSection = () => {
                     fontFamily: "Manrope !important",
                     fontWeight: 700,
                     fontSize: { xs: "22px", md: "32px", lg: "32px" },
-               
+
                     color: "#0c1d14",
                 }}
             >
@@ -58,7 +58,7 @@ const ProductsSection = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     gap: { xs: 2, md: 10 },
-                 
+
                     flexWrap: "nowrap",
                     overflowX: "auto",
                     scrollbarWidth: "none",
@@ -126,7 +126,7 @@ const ProductsSection = () => {
                     alignItems: "center",
                     flexWrap: "wrap",
                     gap: 1.5,
-                   
+
                 }}
             >
 
@@ -142,7 +142,7 @@ const ProductsSection = () => {
                             fontWeight: 400,
                         }}
                     >
-                        Dolomite, Gypsum and select minerals can be offered based on <br />availability and specification requirements.,{" "}
+                        Dolomite, Gypsum and select minerals can be offered based on <br />availability and specification requirements.{" "}
 
                     </Typography>
 

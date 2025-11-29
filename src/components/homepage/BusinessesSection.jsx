@@ -2,15 +2,15 @@ import { Box, Typography } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 // Replace these with your actual images
-import img1 from "../../assets/images/business/muplbg.png";
-import img2 from "../../assets/images/business/otobg.png";
-import img3 from "../../assets/images/business/izbg.png";
-import img4 from "../../assets/images/business/mibg.png";
-import img5 from "../../assets/images/business/mibg2.png";
-import img6 from "../../assets/images/business/rsebg.png";
-import img7 from "../../assets/images/business/mebg.png";
-import img8 from "../../assets/images/business/kpbg.png";
-import img9 from "../../assets/images/business/munbg.png";
+import img1 from "../../assets/images/business/muplbg.webp";
+import img2 from "../../assets/images/business/otobg.webp";
+import img3 from "../../assets/images/business/izbg.webp";
+import img4 from "../../assets/images/business/mibg.webp";
+import img5 from "../../assets/images/business/mibg2.webp";
+import img6 from "../../assets/images/business/rsebg.webp";
+import img7 from "../../assets/images/business/mebg.webp";
+import img8 from "../../assets/images/business/kpbg.webp";
+import img9 from "../../assets/images/business/munbg.webp";
 
 
 // Replace these with real logos
@@ -142,22 +142,25 @@ export default function BusinessesSection() {
                         {/* Background Image */}
                         <Box
                             sx={{
-                                position: "absolute",
+                                position: 'relative',
+                                inset: 0,
                                 width: "100%",
                                 height: "100%",
                                 backgroundImage: `url(${item.bg})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
+                                zIndex: 0
 
                             }}
                         />
 
-                        {/* Gradient Overlay */}
+                        {/* Overlay */}
                         <Box
                             sx={{
                                 position: "absolute",
-                                width: "100%",
-                                height: "100%",
+                                inset: 0,
+                                background:'linear-gradient(0deg, rgba(0, 0, 0, 0.80) 2%, rgba(37.93, 36.71, 36.71, 0.80) 51%, rgba(102, 102, 102, 0) 100%)',
+                                zIndex: 1,
                             }}
                         />
 
@@ -171,6 +174,7 @@ export default function BusinessesSection() {
                                 width: "85%",
                                 textAlign: "center",
                                 color: "#fff",
+                                zIndex:2
                             }}
                         >
                             {/* Logo */}
