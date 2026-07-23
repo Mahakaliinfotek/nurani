@@ -26,7 +26,7 @@ const HomePage = () => {
     return (
         <>
 
-            <Header />
+
             <HeroSlider />
             <CompanyStrip />
             <Box sx={{

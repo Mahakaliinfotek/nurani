@@ -13,7 +13,7 @@ import FooterSection from "../../components/legacyLeadership/FooterSection";
 export default function LegacyLeadershipPage() {
   return (
     <Box sx={{ width: "100%", bgcolor: "background.light" }}>
-      <Header isDark={false} />
+
       <HeroSection />
       <PhilosophySection />
       <CultureSection />
