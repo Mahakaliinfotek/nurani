@@ -42,7 +42,8 @@ export default function Header({ isDark = true }) {
             return;
         }
         if (path === "/contact-us") {
-            if (window.location.pathname === "/") {
+            if (window.location.pathname === "/") 
+                {
                 // Already on homepage → scroll only
                 document.getElementById("contact-section")?.scrollIntoView({
                     behavior: "smooth",
