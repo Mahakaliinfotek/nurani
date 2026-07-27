@@ -9,13 +9,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import XIcon from "@mui/icons-material/X";
 import { Navigate } from "react-router-dom";
 
-const socialLinks = [
-  { id: "email", label: "Email Mahakali Group", href: "mailto:info@mahakaliudyog.com", Icon: EmailOutlinedIcon },
-  { id: "linkedin", label: "Mahakali Group on LinkedIn", href: "#", Icon: LinkedInIcon },
-  { id: "instagram", label: "Mahakali Group on Instagram", href: "#", Icon: InstagramIcon },
-  { id: "facebook", label: "Mahakali Group on Facebook", href: "#", Icon: FacebookOutlinedIcon },
-  { id: "x", label: "Mahakali Group on X", href: "#", Icon: XIcon },
-];
+const socialLinks =
+  [
+    { id: "email", label: "Email Mahakali Group", href: "mailto:info@mahakaliudyog.com", Icon: EmailOutlinedIcon },
+    { id: "linkedin", label: "Mahakali Group on LinkedIn", href: "#", Icon: LinkedInIcon },
+    { id: "instagram", label: "Mahakali Group on Instagram", href: "#", Icon: InstagramIcon },
+    { id: "facebook", label: "Mahakali Group on Facebook", href: "#", Icon: FacebookOutlinedIcon },
+    { id: "x", label: "Mahakali Group on X", href: "#", Icon: XIcon },
+  ];
 
 function SocialLinks() {
   return (

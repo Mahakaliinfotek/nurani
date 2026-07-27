@@ -12,7 +12,7 @@ const mobileMenuItems =
         { label: "HOME", sectionId: "home" },
         { label: "BUSINESSES", sectionId: "businesses" },
         { label: "ABOUT", path: "/about-us" },
-        { label: "PEOPLE", path: "/legacy-leadership" },
+        { label: "PEOPLE", path: "https://themahakaligroup.com/legacy-leadership" },
     ];
 
 export default function HeaderV2() {
@@ -94,7 +94,7 @@ export default function HeaderV2() {
 
                 <HeaderNavItem
                     label="PEOPLE"
-                    onClick={() => navigate("/legacy-leadership")}
+                    onClick={() => navigate("https://themahakaligroup.com/legacy-leadership")}
                 />
             </Box>
 
