@@ -7,13 +7,13 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 import logo from "../assets/mg-logo.png"
 
-const mobileMenuItems = 
-[
-    { label: "HOME", sectionId: "home" },
-    { label: "BUSINESSES", sectionId: "businesses" },
-    { label: "ABOUT", path: "/about-us" },
-    { label: "PEOPLE", path: "/legacy-leadership" },
-];
+const mobileMenuItems =
+    [
+        { label: "HOME", sectionId: "home" },
+        { label: "BUSINESSES", sectionId: "businesses" },
+        { label: "ABOUT", path: "/about-us" },
+        { label: "PEOPLE", path: "/legacy-leadership" },
+    ];
 
 export default function HeaderV2() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -142,7 +142,7 @@ export default function HeaderV2() {
                 />
 
                 <Button
-                    onClick={() => navigateToSection("contact-us")}
+                    onClick={() => navigate("/contact")}
                     disableElevation
                     endIcon={
                         <AddRoundedIcon
@@ -225,7 +225,7 @@ export default function HeaderV2() {
                 >
                     <Box
                         component="img"
-                        src="/header-logo.webp"
+                        src={logo}
                         alt="Mahakali Group"
                         sx={{ width: 91, height: "auto", objectFit: "contain" }}
                     />

@@ -7,6 +7,7 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import XIcon from "@mui/icons-material/X";
+import { Navigate } from "react-router-dom";
 
 const socialLinks = [
   { id: "email", label: "Email Mahakali Group", href: "mailto:info@mahakaliudyog.com", Icon: EmailOutlinedIcon },
@@ -112,7 +113,7 @@ export default function FooterV2() {
       >
         <SocialLinks />
         <Button
-          href="#contact-us"
+          href="/contact"
           sx={{
             ml: 0.5,
             minHeight: { xs: 48, md: 42 },
