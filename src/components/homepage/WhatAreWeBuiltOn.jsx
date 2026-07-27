@@ -8,7 +8,6 @@ import legacyIcon from "../../assets/images/legacy.webp";
 import missionIcon from "../../assets/images/mission.webp";
 import csrIcon from "../../assets/images/csr.webp";
 import peopleIcon from "../../assets/images/users.webp";
-
 const valuesData = [
     {
         id: "legacy",
@@ -16,7 +15,7 @@ const valuesData = [
         description:
             "From a single desk in Kolkata in 1984 to a trusted global resource network spanning four decades",
         icon: legacyIcon,
-        path: "/",
+        path: "https://themahakaligroup.com/story",
     },
     {
         id: "mission-vision",
@@ -24,7 +23,7 @@ const valuesData = [
         description:
             "To grow our multinational conglomerate into a global force in commodities and services, synonymous with trust & commitment worldwide.",
         icon: missionIcon,
-        path: "/about",
+        path: "https://themahakaligroup.com/our-vision",
     },
     {
         id: "csr",
@@ -32,7 +31,7 @@ const valuesData = [
         description:
             "Improving air quality, safeguarding water, and restoring the landscapes that anchor our communities",
         icon: csrIcon,
-        path: "/csr",
+        path: "https://themahakaligroup.com/csr",
     },
     {
         id: "people",
@@ -40,10 +39,9 @@ const valuesData = [
         description:
             "Our greatest asset isn't in our facilities or technology. It's in our people who are our unwavering strength",
         icon: peopleIcon,
-        path: "/people",
+        path: "https://themahakaligroup.com/legacy-leadership",
     },
 ];
-
 const ValueCard = ({ item }) => {
     return (
         <Box
@@ -148,8 +146,10 @@ const ValueCard = ({ item }) => {
             </Typography>
 
             <Box
-                component={Link}
-                to={item.path}
+                component="a"
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
                 sx={{
                     position: {
                         xs: "absolute",

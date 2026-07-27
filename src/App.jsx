@@ -10,6 +10,7 @@ import { Sustainability } from "./pages/homepages/Sustainability";
 import { HomePageLayout } from "./layouts/HomePageLayout";
 import HomePageV2 from "./pages/homepages/HomePageV2";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/legacy-leadership" element={<LegacyLeadershipPage />} />
           <Route path="/sustainability" element={<Sustainability />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Route>
       </Routes>
     </>
