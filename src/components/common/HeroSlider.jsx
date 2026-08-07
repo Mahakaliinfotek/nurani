@@ -369,7 +369,7 @@ import Typography from "@mui/material/Typography";
 
 import home_DV from "../../assets/images/home_DV.webp";
 import home_mv from "../../assets/images/home_mv.webp";
-
+import { motion } from "framer-motion";
 const statistics = [
     {
         value: 12,
@@ -390,6 +390,28 @@ const statistics = [
         label: "TONS READY STOCK",
     },
 ];
+const MotionBox = motion.create(Box);
+const MotionTypography = motion.create(Typography);
+
+/* =========================
+   ANIMATION SETTINGS
+========================= */
+
+const fadeUp = {
+    hidden: {
+        opacity: 0,
+        y: 100,
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.9,
+            ease: [0.25, 0.1, 0.25, 1],
+        },
+    },
+};
+
 
 const CountUpNumber = ({
     value,
@@ -475,6 +497,8 @@ const CountUpNumber = ({
         </Box>
     );
 };
+
+
 
 const HeroSlider = () => {
     return (
@@ -597,7 +621,15 @@ const HeroSlider = () => {
                             },
                         }}
                     >
-                        <Typography
+                        <MotionTypography
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{
+                                once: true,
+                                amount: 0.2,
+                            }}
+                            variants={fadeUp}
+                            component="h2"
                             sx={{
                                 mb: {
                                     xs: 1.5,
@@ -622,9 +654,32 @@ const HeroSlider = () => {
                             }}
                         >
                             The Mahakali Group
-                        </Typography>
+                        </MotionTypography>
 
-                        <Typography
+                        <MotionTypography
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{
+                                once: true,
+                                amount: 0.2,
+                            }}
+                            variants={{
+                                hidden: {
+                                    opacity: 0,
+                                    y: 120,
+                                },
+
+                                visible: {
+                                    opacity: 1,
+                                    y: 0,
+
+                                    transition: {
+                                        duration: 0.9,
+                                        delay: 0.15,
+                                        ease: [0.25, 0.1, 0.25, 1],
+                                    },
+                                },
+                            }}
                             component="h1"
                             sx={{
                                 m: 0,
@@ -679,7 +734,7 @@ const HeroSlider = () => {
                             >
                                 Oman
                             </Box>
-                        </Typography>
+                        </MotionTypography>
                     </Box>
 
                     {/* Statistics card */}
