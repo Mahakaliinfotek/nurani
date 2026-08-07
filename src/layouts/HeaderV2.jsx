@@ -489,7 +489,7 @@ function HeaderNavItem({
                 <AddRoundedIcon
                     sx={{
                         fontSize: "17px !important",
-                        color: "#0647FF",
+                        color: "#000",
                     }}
                 />
             }
@@ -505,8 +505,9 @@ function HeaderNavItem({
                 borderRadius: 0,
 
                 "&:hover": {
+                    fontWeight: 600,
                     backgroundColor: "transparent",
-                    color: "#0647FF",
+                    color: "#034D00",
                 },
             }}
         >
